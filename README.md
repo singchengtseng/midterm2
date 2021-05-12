@@ -1,0 +1,2 @@
+根據題目，在main.cpp檔案利用RPC來執行動作偵測，利用lab8的model辨識三軸加速器的數據，並隨後把資料用MQTT送至broker，資料包含具體偵測出的動作與三軸加速器的數據，
+設計理念如此，然實際操作MQTT無法正常連結，採用第二種方案，mbed與python獨立執行，先把mbed的數據捕捉完存入gesture_ring.txt之中，再從python讀取。
